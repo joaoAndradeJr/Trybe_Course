@@ -15,3 +15,7 @@ console.log("A soma de " + a + " + " + b + " é: " + (a+b));
 // Subtração
 
 console.log("A soma de " + a + " - " + b + " é: " + (a-b));
+
+// Multiplicação
+
+console.log("A soma de " + a + " x " + b + " é: " + (a*b));
