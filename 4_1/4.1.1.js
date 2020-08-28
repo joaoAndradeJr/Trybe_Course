@@ -5,8 +5,8 @@ Multiplicação
 Divisão
 Módulo */
 
-const a = 4;
-const b = 11;
+const a = 12;
+const b = 3;
 
 // Adição
 
@@ -24,6 +24,14 @@ console.log("A multiplicação de " + a + " x " + b + " é: " + (a*b));
 
 if(b > 0){
     console.log("A divisão de " + a + " / " + b + " é: " + (a/b).toFixed(2));
+}else{
+    console.log("Divisor inválido!");
+}
+
+// Módulo (Resto da divisão)
+
+if(b > 0){
+    console.log("O resto da divisão de " + a + " / " + b + " é: " + (a%b));
 }else{
     console.log("Divisor inválido!");
 }
