@@ -14,8 +14,16 @@ console.log("A soma de " + a + " + " + b + " é: " + (a+b));
 
 // Subtração
 
-console.log("A soma de " + a + " - " + b + " é: " + (a-b));
+console.log("A subtração de " + a + " - " + b + " é: " + (a-b));
 
 // Multiplicação
 
-console.log("A soma de " + a + " x " + b + " é: " + (a*b));
+console.log("A multiplicação de " + a + " x " + b + " é: " + (a*b));
+
+// Divisão
+
+if(b > 0){
+    console.log("A divisão de " + a + " / " + b + " é: " + (a/b).toFixed(2));
+}else{
+    console.log("Divisor inválido!");
+}
