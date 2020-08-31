@@ -8,3 +8,17 @@ n = 5
 *****
 ***** 
 */
+
+let n = 5;
+let simbolo = '*';
+let espaco = '';
+
+if(n > 1){
+    for(let index = 0; index < n; index += 1){
+        espaco += simbolo;
+    }
+}
+
+for(let index = 0; index < n; index += 1){
+    console.log(espaco);
+}
