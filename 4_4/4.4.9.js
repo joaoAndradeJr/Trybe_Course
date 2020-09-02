@@ -4,14 +4,15 @@ Valor esperado no retorno da função: Fernanda. */
 
 let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
-let contador = 0;
-let maiorNome = '';
+function maiorNome(){
+    let contador = 0;
+    let maiorNome = '';
 
-for(let i = 0; i < array.length; i += 1){
-    contador = array[i].length;
-    if(contador > maiorNome.length){
-        maiorNome = array[i];
+    for(let i = 0; i < array.length; i += 1){
+        contador = array[i].length;
+        if(contador > maiorNome.length){
+            maiorNome = array[i];
+        }
     }
+    console.log(maiorNome);
 }
-
-console.log(maiorNome);
