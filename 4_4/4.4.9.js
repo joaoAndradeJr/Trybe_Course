@@ -14,5 +14,7 @@ function maiorNome(){
             maiorNome = array[i];
         }
     }
-    console.log(maiorNome);
+    return maiorNome;
 }
+
+console.log(maiorNome(array));
