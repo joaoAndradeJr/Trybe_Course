@@ -9,15 +9,25 @@
   <script>
     let picture = document.getElementsByTagName('img')[0];
     picture.style.left = '0px';
+    let walkForwards = true;
 
     function catWalk() {
       let position = parseInt(picture.style.left);
-      picture.style.left = (parseInt(picture.style.left) + 10) + 'px';
-      if (position > (window.innerWidth - picture.width)) {
-        picture.style.left = '0px';
+      
+      if (walkForwards && (position > (window.innerWidth-picture.width))) {
+        walkForwards = false;
+      }
+      if (!walkForwards && (position <= 0)) {
+        walkForwards = true;
+      }
+      
+      if (walkForwards) {
+        picture.style.left = (position + 10) + 'px';
+      } else {
+        picture.style.left = (position - 10) + 'px';
       }
     }
-    window.setInterval(catWalk, 50);
+    window.setInterval(catWalk, 70);
     /*
   var img = document.getElementsByTagName('img')[0];
   img.style.left = '0px';
