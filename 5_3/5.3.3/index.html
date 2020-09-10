@@ -70,6 +70,15 @@
         Além disso, sempre que um dos eventos for realizado deve-se logar no
         console qual dos eventos acabou de ocorrer.
       </p>
+      <img src="./img1.jpg" alt="gato curioso" id="picture" onmouseover="changePicture()" onmouseout="resetPicture()">
+      <script>
+        function changePicture() {
+          document.getElementById('picture').src="./img2.jpg";
+        }
+        function resetPicture() {
+          document.getElementById('picture').src="./img1.jpg";
+        }
+      </script>
       <!-- Adicione a tag <img /> aqui -->
     </div>
   </body>
