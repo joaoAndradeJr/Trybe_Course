@@ -29,6 +29,18 @@
       <label for="complementoApto">Apartamento</label>
       <input type="radio" name="complementoApto" id="apto" value="Apartamento">
     </fieldset>
+    <fieldset>
+      <label for="resumo">Resumo do Currículo: </label>
+      <textarea name="resumo" id="" cols="30" rows="10" maxlength="1000" required="required"></textarea>
+      <label for="cargo">Cargo: </label>
+      <input type="text" name="cargo" id="" required="required" maxlength="40">
+      <label for="descricaoCargo">Descrição do cargo: </label>
+      <input type="text" name="descricaoCargo" id="" maxlength="500">
+      <label for="dataInicio">Data de Inicio (ex: 10/05/1990) </label>
+      <input type="datetime" name="dataInicio" id="">
+    </fieldset>
+    <button type="submit" id="btnEnviar">Enviar!</button>
+    <button type="reset" id="btnLimpar">Limpar</button>
   </section>
   <script src="script.js"></script>
 </body>
