@@ -1,9 +1,9 @@
-body {
-  background-color: rgb(156, 214, 154);
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2 {
-  color: rgb(0, 0, 119);
-  font-family: Arial, Helvetica;
-  text-align: center;
+.fundo-padrao {
+  background-color: rgb(236, 241, 246);
 }

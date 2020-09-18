@@ -1,8 +1,44 @@
-const estados = ['Acre', 'Alagoas', 'Amapá', 'Bahia', 'Ceará', 'Distrito Federal', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins'];
+let estadosObjeto = {
+  'AC': 'Acre',
+  'AL': 'Alagoas',
+  'AP': 'Amapá',
+  'AM': 'Amazonas',
+  'BA': 'Bahia',
+  'CE': 'Ceará',
+  'DF': 'Distrito Federal',
+  'ES': 'Espírito Santo',
+  'GO': 'Goiás',
+  'MA': 'Maranhão',
+  'MT': 'Mato Grosso',
+  'MS': 'Mato Grosso do Sul',
+  'MG': 'Minas Gerais',
+  'PA': 'Pará',
+  'PB': 'Paraíba',
+  'PR': 'Paraná',
+  'PE': 'Pernambuco',
+  'PI': 'Piauí',
+  'RJ': 'Rio de Janeiro',
+  'RN': 'Rio Grande do Norte',
+  'RS': 'Rio Grande do Sul',
+  'RO': 'Rondônia',
+  'RR': 'Roraima',
+  'SC': 'Santa Catarina',
+  'SP': 'São Paulo',
+  'SE': 'Sergipe',
+  'TO': 'Tocantins'
+};
 
-function insereEstado () {
-  for (let index = 0; index < estados.length; index += 1) {
-    document.getElementById('estado').appendChild(document.createElement('position'));
-    document.getElementsByTagName('position')[index].innerHTML = estados[index];
+  const caixaDeSelecao = document.getElementById('estado');
+
+  for (const estado in estadosObjeto) {
+    let option = new Option(estadosObjeto[estado], estado);
+    caixaDeSelecao.options[caixaDeSelecao.options.length] = option;
   }
-}
+
+ /* clique.addEventListener('click', function () {
+    for (let index = 0; index < estados.length; index += 1) {
+      document.getElementById('estado').appendChild(document.createElement('position'));
+      document.getElementsByTagName('position')[index].setAttribute('value', estados[index]);
+      document.getElementsByTagName('position')[index].innerHTML = estados[index];
+    }
+  });*/
