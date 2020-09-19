@@ -28,17 +28,11 @@ let estadosObjeto = {
   'TO': 'Tocantins'
 };
 
-  const caixaDeSelecao = document.getElementById('estado');
+const caixaDeSelecao = document.getElementById('estado');
+for (const estado in estadosObjeto) {
+  let option = new Option(estadosObjeto[estado], estado);
+  caixaDeSelecao.options[caixaDeSelecao.options.length] = option;
+}
 
-  for (const estado in estadosObjeto) {
-    let option = new Option(estadosObjeto[estado], estado);
-    caixaDeSelecao.options[caixaDeSelecao.options.length] = option;
-  }
-
- /* clique.addEventListener('click', function () {
-    for (let index = 0; index < estados.length; index += 1) {
-      document.getElementById('estado').appendChild(document.createElement('position'));
-      document.getElementsByTagName('position')[index].setAttribute('value', estados[index]);
-      document.getElementsByTagName('position')[index].innerHTML = estados[index];
-    }
-  });*/
+var picker = new Pikaday({field: document.getElementById('datepicker')});
+  

@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <link rel="stylesheet" href="css/bulma.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Criando formulário</title>
 </head>
 <body>
-  <form action="GET">
+  <form action="POST">
     <section class="section">
       <div class="container">
         <header>
@@ -92,7 +93,8 @@
         <div class="field">
           <label class="label" for="dataInicio">Data de Inicio (ex: 10/05/1990)</label>
           <div class="control">
-            <input class="input" type="date" name="dataInicio" id="dataInicio">
+            <input type="text" id="datepicker">
+            <!--<input class="input" type="date" name="dataInicio" id="dataInicio">-->
           </div>
         </div>
         <div class="field is-grouped">
@@ -106,6 +108,7 @@
       </div>
     </section>
   </form>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
