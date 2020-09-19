@@ -64,6 +64,42 @@
       filho.innerHTML = 'Exercício 5.2 - JavaScript DOM';
       pai.appendChild(filho);
 
+      // Adicione a tag div com a classe main-content como filho da tag body
+      filho = document.createElement('div');
+      pai.appendChild(filho);
+      filho.setAttribute('class', 'main-content');
+
+      // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2
+      pai = document.querySelector('.main-content');
+      filho = document.createElement('div');
+      pai.appendChild(filho);
+      filho.setAttribute('class', 'center-content');
+
+      // Adicione a tag p como filho do div criado no passo 3 e coloque algum texto
+      pai = document.querySelector('.center-content');
+      filho = document.createElement('p');
+      filho.innerHTML = 'Estou editando um site via javascript!';
+      pai.appendChild(filho);
+
+      // Adicione a tag div com a classe left-content como filho da tag div criada no passo 2
+      pai = document.querySelector('.main-content');
+      filho = document.createElement('div');
+      filho.setAttribute('class', 'left-content');
+      pai.appendChild(filho);
+
+      // Adicione a tag div com a classe right-content como filho da tag div criada no passo 2
+      pai = document.querySelector('.main-content');
+      filho = document.createElement('div');
+      filho.setAttribute('class', 'right-content');
+      pai.appendChild(filho);
+
+      // Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do div criado no passo 5
+      pai = document.querySelector('.left-content');
+      filho = document.createElement('img');
+      filho.setAttribute('class', 'small-image');
+      filho.setAttribute('src', 'https://picsum.photos/200');
+      pai.appendChild(filho);
+
     </script>
   </body>
 </html>
