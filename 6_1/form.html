@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Exercício bloco 6 dia 1</h1>
+  </header>
+  <section>
+    <fieldset>
+      <h2>Criando um formulário</h2>
+      <fieldset>
+        <div>
+          <label for="nome">Nome: </label>
+          <input type="text" name="nome" placeholder="Digite seu nome" required="required">
+          <label for="email">Email: </label>
+          <input type="text" name="email" maxlength="50" placeholder="Digite seu email" required="required">
+          <label for="cpf">CPF: </label>
+          <input type="text" name="cpf" maxlength="11" placeholder="Digite somente números" required="required">
+        </div>
+        <div>
+          <label for="endereco">Endereço: </label>
+          <input type="text" name="endereco" maxlength="200" placeholder="Digite seu endereço" required="required">
+          <label for="cidade">Cidade: </label>
+          <input type="text" name="cidade" maxlength="28" placeholder="Digite sua cidade" required="required">
+          <label for="estado">Estado: </label>
+          <select name="estados" id="estado">
+          </select>
+        </div>
+        <div>
+          <input type="radio" name="complemento" id="casa" value="Casa">
+          <label for="complementoCasa">Casa</label>
+          <input type="radio" name="complemento" id="apto" value="Apartamento">
+          <label for="complementoApto">Apartamento</label>
+        </div>  
+      </fieldset>
+      <fieldset>
+        <div>
+          <label for="resumo">Resumo do Currículo: </label>
+          <textarea name="resumo" id="" cols="30" rows="10" maxlength="1000" required="required"></textarea>
+          <label for="cargo">Cargo: </label>
+          <input type="text" name="cargo" id="" required="required" maxlength="40">
+        </div>
+        <div>
+          <label for="descricaoCargo">Descrição do cargo: </label>
+          <textarea name="descricaoCargo" id="" cols="30" rows="10" maxlength="500" required="required"></textarea>
+          <label for="dataInicio">Data de Inicio (ex: 10/05/1990) </label>
+          <input type="date" name="dataInicio" id="dataInicio" value="">
+        </div>
+      </fieldset>
+      <button type="submit" id="btnEnviar">Enviar!</button>
+      <button type="reset" id="btnLimpar">Limpar</button>
+    </fieldset>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
