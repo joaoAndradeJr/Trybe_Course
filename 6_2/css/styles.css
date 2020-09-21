@@ -1,0 +1,11 @@
+body{
+  background-color: rgb(212, 216, 205);
+  margin: auto;
+  max-width: 70%;
+}
+
+h1, h2 {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(145, 147, 149);
+}
