@@ -13,4 +13,6 @@ function sum(a, b) {
 
 // implemente seus testes aqui
 
-assert.strictEqual(sum(4, '5'), 'error');
+assert.throws(() => { 
+  sum(4, '5');
+}, /^Error: parameters must be numbers$/);
