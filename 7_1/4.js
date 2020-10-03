@@ -35,8 +35,7 @@ HTML; ...
 const skills = ['HTML', 'CSS', 'JavaScript', 'POO', 'Java'];
 
 const concatenar = (param) => {
-  const retornoletraX = letraX('Bebeto');
-  return `${retornoletraX} Minhas cinco principais habilidades são: ${skills.sort()}`;
+  return `${param} Minhas cinco principais habilidades são: ${skills.sort()}`;
 }
 
-console.log(concatenar());
+console.log(concatenar(letraX('Bebeto')));
