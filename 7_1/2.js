@@ -11,6 +11,3 @@ const maiorPalavra = (frase) => {
   }
   return maiorPalavra;
 }
-
-
-console.log(maiorPalavra("Antônio foi no banheiro e não sabemos o que aconteceu"));
