@@ -22,4 +22,3 @@ const lesson3 = {
 }; 
 
 const retornaValores = (objeto) => Object.values(objeto); 
-
