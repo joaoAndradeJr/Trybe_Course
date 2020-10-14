@@ -19,11 +19,8 @@ const letraX = (palavra) => {
       fraseNova[index] = palavra;
     }
   }
-
   return fraseNova.join(' ');
 }
-
-console.log(letraX('Bebeto'));
 
 /* Um array com escopo global, que é o escopo do arquivo JS, nesse caso, contendo cinco strings com suas principais skills.
 
@@ -37,5 +34,3 @@ const skills = ['HTML', 'CSS', 'JavaScript', 'POO', 'Java'];
 const concatenar = (param) => {
   return `${param} Minhas cinco principais habilidades são: ${skills.sort()}`;
 }
-
-console.log(concatenar(letraX('Bebeto')));
