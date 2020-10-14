@@ -20,10 +20,6 @@ const lesson3 = {
   turno: 'noite',
 };
 
-// Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
+// Crie uma função para mostrar o tamanho de um objeto
 
-function returnKeys(object) {
-  return Object.keys(object);
-}
-
-console.log(returnKeys(lesson3));
+console.log(lesson3);
