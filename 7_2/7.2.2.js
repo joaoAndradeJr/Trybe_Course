@@ -22,6 +22,4 @@ const lesson3 = {
 
 // Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro.
 
-function returnKeys(object) {
-  return Object.keys(object);
-}
+const returnKeys = (object) => Object.keys(object);
