@@ -1,5 +1,4 @@
-// Para os exercícios a seguir, use o seguinte código.
-// Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro
+// Para os exercícios a seguir, use o seguinte código. Crie uma função para listar os valores de um objeto. Essa função deve receber um objeto como parâmetro
 
 const lesson1 = {
   materia: 'Matemática',
