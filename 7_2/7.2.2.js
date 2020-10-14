@@ -25,5 +25,3 @@ const lesson3 = {
 function returnKeys(object) {
   return Object.keys(object);
 }
-
-console.log(returnKeys(lesson3));
