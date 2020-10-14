@@ -22,5 +22,5 @@ const lesson3 = {
 
 // Crie uma função para mostrar o tamanho de um objeto
 
-const arrayDoObjeto = Object.keys(lesson1);
-const tamanhoDoObjeto = arrayDoObjeto.length;
+const arrayObject = Object.keys(lesson1);
+const objectLength = arrayObject.length;
