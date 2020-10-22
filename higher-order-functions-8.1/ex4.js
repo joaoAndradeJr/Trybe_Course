@@ -110,8 +110,13 @@ const expected_result = [
   }
 ] ;
 
-function booksOrderedByReleaseYearDesc() {
-  return books.reverse(books.releaseYear);
+function orderByReleaseYear(value1, value2) {
+  return value2.releaseYear - value1.releaseYear;
 }
+
+function booksOrderedByReleaseYearDesc() {
+  return books.sort(orderByReleaseYear);
+}
+
 
 assert.deepEqual(booksOrderedByReleaseYearDesc(), expected_result);
