@@ -8,7 +8,15 @@
 //   vowels('Why?') --> 0
 
 function vowels(str) {
-
+  const size = str.length;
+  const lcstr = str.toLowerCase();
+  let vowels = 0;
+  for (let index = 0; index < size; index += 1) {
+    if (lcstr[index] === 'a' || lcstr[index] === 'e' || lcstr[index] === 'i' || lcstr[index] === 'o' || lcstr[index] === 'u') {
+      vowels += 1;
+    }
+  }
+  return vowels;
 }
 
 module.exports = vowels;
